@@ -1,0 +1,76 @@
+<!--Se quieren tener las siguientes tablas en un sitio web. Escribe el código HTML para ello.-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Ejercicio 6 Unidad 2 Parte 2</title>
+    </head>
+
+    <body>
+
+        <p>
+            <table border="1">
+                <caption>TABLA INTERNA (TI)</caption>
+                <tr>
+                    <td colspan="4">Soy una celda de la TI que surge de combinar 4 celdas</td>
+                </tr>
+                <tr>
+                    <td>Yo soy una celda normal de la TI</td>
+                    <td>Yo soy una celda normal de la TI</td>
+                    <td>Yo soy una celda normal de la TI</td>
+                    <td>Yo soy una celda normal de la TI</td>
+                </tr>
+            </table>
+        </p>
+
+        <p>
+            <table border="1">
+                <caption>TABLA EXTERNA (TE)</caption>
+                <tr>
+                    <td rowspan="3">Soy una celda de la TE que surge de combinar 3 celdas</td>
+                    <td>Yo soy una celda normal de la TE</td>
+                </tr>
+                <tr>
+                    <td>Yo soy una celda normal de la TE</td>
+                </tr>
+                <tr>
+                    <td>Yo soy una celda normal de la TE</td>
+                </tr>
+            </table>
+        </p>
+
+        <p>
+            <table border="1">
+                <caption>TABLA EXTERNA (TE)</caption>
+                <tr>
+                    <td rowspan="3">Soy una celda de la TE que surge de combinar 3 celdas</td>
+                    <td>Yo soy una celda normal de la TE</td>
+                </tr>
+                <tr>
+                    <td>
+                        <table border="1">
+                            <caption>TABLA INTERNA (TI)</caption>
+                            <tr>
+                                <td colspan="4">Soy una celda de la TI que surge de combinar 4 celdas</td>
+                            </tr>
+                            <tr>
+                                <td>Yo soy una celda normal de la TI</td>
+                                <td>Yo soy una celda normal de la TI</td>
+                                <td>Yo soy una celda normal de la TI</td>
+                                <td>Yo soy una celda normal de la TI</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Yo soy una celda normal de la (TE)</td>
+                </tr>
+            </table>
+        </p>
+
+    </body>
+</html>

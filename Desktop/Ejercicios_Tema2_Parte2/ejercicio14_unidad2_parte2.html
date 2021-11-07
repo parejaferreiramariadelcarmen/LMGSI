@@ -1,0 +1,45 @@
+<!--Ejercicio 14. Analiza el siguiente ejemplo del w3school. 
+Haz una captura de pantalla donde se visualice dicha página en un navegador.-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ejercicio 14 Unidad 2 Parte 2</title>
+    </head>
+
+    <body>
+        <form action="envio.php" method="post" id="f1">
+            <textarea id="mitext" name="mitext" cols="30" rows="10">The cat was playing in the garden.</textarea><br>
+            <input type="submit">
+        </form>
+
+        <br>
+        <br>
+
+        <!--Estamos delante de un formulario <form>. 
+        El atributo action define la ubicación (URL) donde se envían los datos que el formulario ha recopilado cuando se validan. 
+        El atributo method define con qué método HTTP se envían los datos (generalmente get o post).
+        El atributo id define el nombre de identificación de nuestro formulario.
+        
+        El campo de entrada para el mensaje es indicado por la etiqueta <textarea>; un campo de texto multilínea. 
+        El atributo name se utiliza para especificar el nombre del elemento <textarea>.
+        El atributo id es el nombre de identificación del elemento.
+        Los atributos cols y rows permiten especificar el tamaño del textarea cuando se carga la página, por lo que modificar estos valores
+        cambiaría el tamaño del cuadro de texto.
+    
+        El <input> tipo submit representa el botón que al presionarse, enviará los datos del formulario.-->
+        
+        <form action="envio.php" method="post" id="f1">
+            <textarea id="mitext" name="mitext" cols="30" rows="10" maxlength="100" placeholder="Escriba aquí..."></textarea>
+            <small>Caracteres máximos permitidos: 100</small><br>
+            <input type="submit">
+        </form>
+        
+        <!--El atributo maxlength limita el número de caracteres máximos del cuadro de texto.
+        El atributo placeholder representa una indicación de ejemplo para campos de formularios como input y textarea.-->
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!--Ejercicio 16. Se quiere tener el siguiente formulario en un sitio web. Escribe el código HTML para ello.-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ejercicio 16 Unidad 2 Parte 2</title>
+    </head>
+
+    <body>
+        <form action="datos.php" id="formulario2" name="formulario2" method="get">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="apellidos">Apellidos</label><br>
+                <input type="text" id="apellidos" name="apellidos"><br>
+                <label for="dni">DNI</label><br>
+                <input type="text" id="dni" name="dni" maxlength="9" size="9">
+            </fieldset>
+            <fieldset>
+                <legend>Datos de conexión</legend>
+                <label for="usr">Nombre de usuario</label><br>
+                <input type="text" id="urs" name="urs"><br>
+                <label for="pass">Contraseña</label><br>
+                <input type="password" id="pass" name="pass"><br>
+                <label for="pass2">Repite la contraseña</label><br>
+                <input type="password" id="pass" name="pass">
+            </fieldset>
+            <p><input type="submit"></p>
+        </form>
+    </body>
+</html>

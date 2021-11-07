@@ -1,0 +1,51 @@
+<!--Ejercicio 7. Se quiere tener la siguiente tabla en un sitio web. Escribe el código HTML para ello.-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="keywords" content="ipod, apple, bueno, bonito, barato">
+        <meta name="author" content="MC Pareja">
+        <title>Tabla comparativa</title>
+    </head>
+
+    <body>
+        <p><h2>Comparativa de reproductores MP3</h2></p>
+        <table border="1">
+            <caption>Tabla comparativa de las características técnicas de los reproductores MP3</caption>
+            <tr>
+                <td>&nbsp;</td>
+                <td colspan="3">
+                    <a href="http://www.apple.es" target="_blank"><img width="150px" src="img/apple1.jpg" alt="Dispositivo 1"></a>
+                </td>
+                <td colspan="2">
+                    <a href="http://www.apple.es" target="_blank"><img width="150px" src="img/apple2.jpg" alt="Dispositivo 2"></a>
+                </td>
+            </tr>
+            <tr>
+                <th>Capacidad de almacenamiento</th>
+                <td>4 GB (1000 canciones)</td>
+                <td>8GB (2000 canciones)</td>
+                <td>16GB (4000 canciones)</td>
+                <td>30GB (7500 canciones)</td>
+                <td>80GB (20000 canciones)</td>
+            </tr>
+            <tr>
+                <th>Pantalla</th>
+                <td colspan="3">LCD de 3 cm (diagonal) con retroalimentación</td>
+                <td colspan="2">LCD de 6 cm (diagonal) con retroalimentación</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Tiempo de carga</th>
+                <td colspan="3" rowspan="2">Unas 3 horas</td>
+                <td colspan="2">Unas 4 horas</td>               
+            </tr>
+            <tr>
+                <td colspan="2">Unas 2 horas para alcanzar el 80% de su capacidad</td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!--Ejercicio 11. Modifica el ejercicio anterior para que se muestre el siguiente menú al
+principio de la página. Cada enlace irá directamente a su lista gracias al uso de anclas.-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ejercicio 11 Unidad 2 Parte 2</title>
+    </head>
+    
+    <body>
+        <p><a href="#ancla1">Ir a la lista numerada</a></p>
+        <p><a href="#ancla2">Ir a la lista de letras</a></p>
+        <p><a href="#ancla3">Ir a la lista de letras minúsculas</a></p>
+        <p><a href="#ancla4">Ir a la lista de letras romanas</a></p>
+
+
+        <p><h4><a id="ancla1">Lista numerada</a></h4></p>
+        <ol>
+            <li>Apples</li>
+            <li>Plátanos</li>
+            <li>Limones</li>
+            <li>Naranjas</li>
+        </ol>
+
+        <p><h4><a id="ancla2">Lista de letras</a></h4></p>
+        <ol style="list-style-type: upper-latin">
+            <li>Apples</li>
+            <li>Plátanos</li>
+            <li>Limones</li>
+            <li>Naranjas</li>
+        </ol>   
+        
+        <p><h4><a id="ancla3">Lista de letras minúsculas</a></h4></p>
+        <ol style="list-style-type: lower-latin">
+            <li>Apples</li>
+            <li>Plátanos</li>
+            <li>Limones</li>
+            <li>Naranjas</li>
+        </ol>
+
+        <p><h4><a id="ancla4">Lista de letras romanas</a></h4></p>
+        <ol style="list-style-type: upper-roman">
+            <li>Apples</li>
+            <li>Plátanos</li>
+            <li>Limones</li>
+            <li>Naranjas</li>
+        </ol>
+    </body>
+
+</html>

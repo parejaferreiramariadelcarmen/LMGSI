@@ -1,0 +1,120 @@
+<!--Ejercicio 13. Haz un formulario en una página web donde utilices los diferentes tipos de <input>
+y realiza una captura de pantalla donde se visualice dicha página en tres navegadores web diferentes.
+Después explicar brevemente para qué sirve cada tipo. -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ejercicio 13 Unidad 2 Parte 2</title>
+    </head>
+
+    <body>
+        <p><h3>Complete el siguiente formulario</h3></p>
+        <form action="/action_php.php" method="get">
+            <ol>
+                <li>
+                    <p>
+                        <label for="week">Indique la semana de compra del producto:</label>
+                        <input type="week" id="week" name="year_week" min="2021-W01" max="2021-W43">
+                        <!--El elemento input con valor "week" en su atributo type, representa un campo para la entrada de una semana.-->
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <label for="month">Indique el mes de devolución del producto:</label>
+                        <input type="month" id="month" name="bdaymonth" min="2021-01" max="2021-11">
+                        <!--El elemento input con valor "month" en su atributo type, representa un campo para la entrada de una mes.-->
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <label for="time">Indique la hora actual:</label>
+                        <input type="time" id="time" name="urs_time">
+                        <!--El elemento input con valor "time" en su atributo type, representa un campo para la entrada de una hora.-->
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <label for="date">Indique la fecha de hoy:</label>
+                        <input type="date" id="date" name="your_date" min="2021-01-01" max="2021-12-31">
+                        <!--El elemento input con valor "date" en su atributo type, representa un campo para la entrada de una fecha.-->
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <label for="datetime">Elija la fecha y hora de la nueva entrega:</label>
+                        <input type="datetime" id="datetime" name="fechaentrega">
+                        <small>Formato: 2021-11-02 12:50</small>
+                        <!--El elemento input con valor "datetime" en su atributo type, representa un campo para la entrada de una fecha y hora.-->
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <label for="birthday">Elija el día y hora de su compleaños:</label>
+                        <input type="datetime-local" id="birthday" name="bdaytime" min="1950-01-01T00:00" max="2021-11-31T00:00">
+                        <!--El elemento input con valor "datetime-local" en su atributo type, representa un campo para la entrada de una fecha y hora.-->
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <label for="range">Indique el nivel de satisfacción con nuestro servicio:</label>
+                        <input type="range" id="range" name="points" min="1" max="10">
+                        <!--El elemento input con valor "range" en su atributo type, representa un campo para la entrada de un número dentro de un rango, 
+                        con la salvedad de que la elección de un valor exacto no es importante..-->
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <label for="number">Introduzca la cantidad de prodcutos que desea recibir:</label>
+                        <input type="number" id="number" name="quantity" min="1" max="5">
+                        <!--El elemento input con valor "number" en su atributo type, representa un campo para la entrada de un número.-->
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <label for="search">Busque el modelo que desee adquirir:</label>
+                        <input type="search" id="search" name="googlesearch">
+                        <!--El elemento input con valor "search" en su atributo type, representa un campo de texto de una sola línea para propósitos de búsqueda.-->
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <label for="url">Introduzca la página web de su negocio:</label>
+                        <input type="url" id="url" name="homepage" placeholder="https://example.com">
+                        <!--El elemento input con valor "url" en su atributo type, representa un campo de texto para la entrada de una url.-->
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <label for="email">Introduzca su email:</label>
+                        <input type="email" id="email" name="ursemail" placeholder="example@google.com">
+                        <!--El elemento input con valor "email" en su atributo type, representa un campo de texto para la entrada de un e-mail.-->
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <label for="tel">Introduzca su número de teléfono</label>
+                        <input type="tel" id="tel" name="usrtel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+                        <small>Formato: 123-456-789</small>
+                        <!--El elemento input con valor "tel" en su atributo type, representa un campo para la entrada de un teléfono.-->
+                    </p>
+                </li>
+                <li>
+                    <p>Elija sus colores favoritos:</p>
+                    <label for="color1">Color 1</label>
+                    <input type="color" id="color1" name="favcolor" value="#6FFF33">
+                    <label for="color2">Color 2</label>
+                    <input type="color" id="color2" name="favcolor" value="#FFAC1B">
+                    <!--El elemento input con valor "color" en su atributo type, representa un campo para la entrada de un color.-->
+                </li>
+            </ol>
+
+            <button>Enviar información</button>
+        </form>        
+    </body>
+
+</html>

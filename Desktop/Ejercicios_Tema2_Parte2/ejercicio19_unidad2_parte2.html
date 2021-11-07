@@ -1,0 +1,57 @@
+<!--Ejercicio 19. Se quiere tener el siguiente formulario en un sitio web sin tener en
+cuenta los aspectos relacionados con el diseño como pueden ser el color o la alineación.
+Escribe el código HTML para ello.-->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ejercicio 19 Unidad 2 Parte 2</title>
+    </head>
+    <body>
+        <h3>Información sobre el producto</h3>
+        <form action="peticion.php" method="post" id="formulario4" name="formulario4">
+            <fieldset>
+                <legend>Datos básicos</legend>
+                <label for="nombre">Nombre</label><br>
+                <input type="text" id="nombre" name="nombre" maxlength="20"><br><br>
+
+                <label for="descrpcion">Descripción</label><br>
+                <textarea id="descripcion" name="descripcion" rows="6" maxlength="100"></textarea><br><br>
+                
+                <label for="foto">Foto</label>
+                <input type="file" id="foto" name="foto" accept=".png,.jpg,.jpeg"><br><br>
+
+                <input type="checkbox" id="contador" name="contador">
+                <label for="contador">Añadir contador de visitas</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos económicos</legend>
+                <label>Precio <input type="text" id="precio" name="precio"> €</label>&emsp;
+                <label>Impuestos 
+                    <select id="impuestos" name="impuestos">
+                        <option value="4%">4%</option>
+                        <option value="7%">7%</option>
+                        <option value="16%">16%</option>
+                        <option value="25%">25%</option>
+                    </select>
+                </label><br><br>
+
+                <label for="promocion">Promoción</label>
+                <div id="promocion">
+                    <input type="radio" id="none" name="promocion" value="ninguno" checked>
+                    <label for="none">Ninguno</label><br>
+                    <input type="radio" id="prom1" name="promocion" value="transp_gratuito">
+                    <label for="prom1">Transporte gratuito</label><br>
+                    <input type="radio" id="prom2" name="promocion" value="desc5%">
+                    <label for="prom2">Descuento 5%</label>
+                </div>
+            </fieldset>
+
+            <input type="submit">
+        </form>
+    </body>
+</html>

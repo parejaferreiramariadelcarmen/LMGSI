@@ -1,0 +1,41 @@
+<!--Ejercicio 12. La etiqueta <input> posee un tipo para adjuntar archivos y subirlos al servidor.
+Haz una página web con un formulario donde emplees dicho tipo de <input>.
+A continuación, realiza las siguientes tareas y contesta a las preguntas planteadas.-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Comptible" content="ie=edge">
+        <title>Ejercicio 12 Unidad 2 Parte 2</title>
+    </head>
+    
+    <body>
+        <!--Pregunta 1-->
+        <p><h2>Entrega Ejercicios Unidad 2 Parte 2</h2></p>
+        <p><h4>Pinche en el botón y adjunte los documentos de su tarea.</h4></p>
+        <form action="/action_php.php" method="get" enctype="multipart/form-data">
+            <label for="myfile">Seleccione:</label>
+            <input type="file" id="myfile" multiple><br><br>
+            <input type="submit">
+        </form>
+
+        <!--Pregunta 2-->
+        <p><h2>Entrega Ejercicios Unidad 2 Parte 2</h2></p>
+        <p><h4>Pinche en el botón y adjunte las capturas de su tarea.</h4></p>
+        <form action="/action_php.php" method="get" enctype="multipart/form-data">
+            <label for="myfile">Seleccione:</label>
+            <input type="file" id="myfile" accept=".jpg,.jpeg,.png" multiple> <!--El atributo accept permite limitar el formato de los archivos.-->
+            <input name="MAX_FILE_SIZE" value="20971520" type="hidden"><br><br> <!--De esta forma podemos limitar el tamaño (bytes) de los archivos.-->
+            <input type="submit">
+        </form>
+        
+    </body>
+</html>
+
+<!--Pregunta 3.
+El atributo entype es conveniente y absolutamente necesario si el formulario es enviando por método POST y se manejan
+campos de tipo file, <input type="file"> . Si el formulario no cumple estas dos condiciones no
+es necesario especificarlo. En caso de escribirlo el valor especificado debe ser "multipart/form-data".-->

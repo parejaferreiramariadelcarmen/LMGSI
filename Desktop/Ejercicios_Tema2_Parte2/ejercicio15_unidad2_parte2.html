@@ -1,0 +1,56 @@
+<!--Ejercicio 15. Se quiere tener el siguiente formulario en un sitio web. Escribe el código HTML para ello-->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ejercicio 15 Unidad 2 Parte 2</title>
+    </head>
+
+    <body>
+
+        <p><h2>Rellena tu CV</h2></p>
+
+        <form action="cv.php" method="post" name="formulario1" id="formulario1" enctype="multipart/form-data">
+
+            <label for="nombre">Nombre</label><br>
+            <input type="text" name="nombre" id="nombre" maxlength="20" required><br>
+            
+            <label for="apellidos">Apellidos</label><br>
+            <input type="text" name="apellidos" id="apellidos" maxlength="30" required><br>
+
+            <label for="contraseña">Contraseña</label><br>
+            <input type="password" name="contraseña" id="contraseña" maxlength="20" required><br>
+
+            <label for="DNI">DNI</label><br>
+            <input type="text" name="DNI" id="DNI" maxlength="9" size="9"><br>
+
+            <label for="genero">Género</label><br> 
+            <div id="genero">
+                <input type="radio" name="genero" id="hombre" value="Hombre" checked>
+                <label for="hombre">Hombre</label><br>
+                <input type="radio" name="genero" id="mujer" value="Mujer">
+                <label for="mujer">Mujer</label><br>
+                <input type="radio" name="genero" id="nobinario" value="nobinario">
+                <label for="nobinario">No binario</label>
+            </div><br><br> 
+            <!--Me he tomado la libertad de hacer una pequeña modificación para hacer el formulario más inclusivo-->           
+
+            <label for="foto">Incluir mi foto</label>
+            <input type="file" id="foto" accept=".jpg,.jpeg,.png"><br><br>
+
+            <input type="checkbox" name="suscripción" id="suscripción" checked>
+            <label for="suscripción">Suscríbeme al boletín de novedades</label>
+            
+            <br><br>
+
+            <input type="submit" value="Guardar cambios">
+            <input type="reset" value="Borrar los datos introducidos">
+
+        </form>
+
+    </body>
+
+</html>

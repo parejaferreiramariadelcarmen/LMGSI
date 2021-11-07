@@ -1,0 +1,72 @@
+<!--Ejercicio 18. Se quiere tener el siguiente formulario en un sitio web. Escribe el código HTML para ello.-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ejercicio 18 Unidad 2 Parte 2</title>
+    </head>
+
+    <body>
+        <h1>Rellena tu CV</h1>
+        <form action="datoscv.php" method="post" name="formulario3" id="formulario3">
+
+            <fieldset>
+                <legend>Datos personales:</legend>
+
+                <label for="provincia">Provincia</label><br>
+                <select name="provincia" id="provincia">
+                    <option value="placeholder" disabled selected>-selecciona-</option>
+                    <option value="huelva">Huelva</option>
+                    <option value="cadiz">Cádiz</option>
+                    <option value="malaga">Málaga</option>
+                    <option value="granada">Granada</option>
+                    <option value="jaen">Jaen</option>
+                    <option value="almeria">Almería</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="sevilla">Sevilla</option>
+                </select>
+
+                <br>
+
+                <label for="birthdate">Fecha de nacimiento</label>
+                <div name="birthdate" id="birthdate" class="input-group">
+                    <input type="text" id="day" name="day" maxlength="2" size="2">
+                    <span class="input-group-addon">de</span> 
+                    <select name="month" id="month">
+                        <option value="enero">Enero</option>
+                        <option value="febrero">Febrero</option>
+                        <option value="marzo">Marzo</option>
+                        <option value="abril">Abril</option>
+                        <option value="mayo">Mayo</option>
+                        <option value="junio">Junio</option>
+                        <option value="julio">Julio</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="septiembre">Septiembre</option>
+                        <option value="octubre">Octubre</option>
+                        <option value="noviembre">Noviembre</option>
+                        <option value="diciembre">Diciembre</option>
+                    </select>
+                    <span class="input-group-addon">de</span> 
+                    <input type="text" id="year" name="year" maxlength="4" size="4">
+                </div>
+
+                <label for="hobbies">Temas de interés</label><br>
+                <select name="hobbies" id="hobbies" size="4">
+                    <option value="adm">Administración de base de datos</option>
+                    <option value="anal">Análisis y programación</option>
+                    <option value="arch">Arquitectura</option>
+                    <option value="quality">Calidad</option>
+                    <option value="calculo">Cálculo</option>
+                    <option value="design">Diseño de algoritmos</option>>
+                </select>                    
+            </fieldset>
+            
+            <p><input type="submit"></p>
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!--Ejercicio 20. Haz un ejemplo de una página web que use la etiqueta
+<iframe>, <object> y <embed> para mostrar tres veces el mismo vídeo de youtube. -->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoort" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ejericio 20 Unidad 2 Parte 2</title>
+    </head>
+    <body>
+        <table border="0">
+            <thead>
+                <td><img width="150px" height="150px" src="img/takayan.jpg"></td>
+                <th colspan="2"><h2>&nbsp;ARTISTA: たかやん / Takayan</h2></th>                    
+            </thead>
+        </table>
+        <br> <!--Si juntase ambas tablas los iconos no quedan bien distribuidos.-->
+        <table border="0">
+            <tr>
+                <td colspan="3"><h3>¡No olvides seguir a Takayan en todas sus redes sociales!</h3></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td><a href="https://open.spotify.com/artist/79JgYJHiBUZcvYqOC5Zufn?si=7EJEBkU-SDCwobG7Vwq4bA" target="_blank"><img width="50px" height="50px" src="img/spotify.jpg"></a></td>
+                <td><a href="https://www.youtube.com/c/MegaIgaguri" target="_blank"><img width="50px" height="50px" src="img/youtube.jpg"></a></td>
+                <td><a href="https://www.instagram.com/takayan_gorizal/?hl=es" target="_blank"><img width="50px" height="50px" src="img/insta.jpg"></a></td>
+            </tr>
+        </table>        
+        <br>
+        <h2>【Última canción: Underdog】</h2>        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rJGmTGf5mZ4?start=148" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br><br>
+        <object width="560" height="315" data="https://www.youtube.com/embed/rJGmTGf5mZ4?start=148" type="text/html"></object>
+        <br><br>
+        <embed width="560" height="315" src="https://www.youtube.com/embed/rJGmTGf5mZ4?start=148" type="text/html">
+    </body>
+</html>
